@@ -1,0 +1,149 @@
+@charset "UTF-8"
+/* コードの文字化けを防ぐ */
+
+/* 共通部分
+-------------------------------------------------- */
+
+html {
+  /* ユーザーが設定した文字サイズを正しく反映 */
+  font-size: 100%;
+}
+
+body {
+  /* 書体の指定 */
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", sans-serif;
+  /* 行の高さの指定 */
+  line-height: 1.7;
+  /* 色の指定 */
+  color: #432;
+}
+
+a {
+  /* 傍線の指定 */
+  text-decoration: none;
+}
+
+img {
+  /* 画像の大きさの指定 */
+  max-width: 100%;
+}
+
+/* HEADER
+------------------------------- */
+
+.logo {
+  /* ロゴの横幅の指定 */
+  width: 210px;
+  /* マージンの指定 */
+  margin-top: 14px;
+}
+
+.main-nav {
+  /* 横並びの指定 */
+  display: flex;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  /* マージンの指定 */
+  margin-top: 34px;
+  /* リストマーカーの指定 */
+  list-style: none;
+}
+
+.main-nav li {
+  /* マージンの指定 */
+  margin-left: 36px;;
+}
+
+.main-nav a {
+  /* 色の指定 */
+  color: #432;
+}
+
+.main-nav a:hover {
+  /* 色の指定 */  
+  color: #0bd;
+}
+
+.page-header {
+  /* 横並びの指定 */
+  display: flex;
+  /* 両端の設置の指定 */
+  justify-content: space-between;
+}
+
+.wrapper {
+  /* 横幅最大の指定 */
+  max-width: 1100px;
+  /* 中央に配置する設定 */
+  margin: 0 auto;
+  /* スマートフォーン向けの余白の指定 */
+  padding: 0 4%;
+}
+
+/* HOME
+------------------------------- */
+
+.home-content {
+  /* 画面中央の指定 */
+  text-align: center;
+  /* 余白の指定 */
+  margin-top: 10%;
+}
+
+.home-content p {
+  /* フォントサイズの指定 */
+  font-size: 1.125rem;
+  /* 余白の指定 */
+  margin: 10px 0 42px;
+}
+
+/* 見出し */
+.page-title {
+  /* フォントサイズの指定 */
+  font-size: 5rem;
+  /* 書体の指定 */
+  font-family: Philosopher, serif;
+  /* テキスト大文字変換の指定 */
+  text-transform: uppercase;
+  /* フォントの太さの指定 */
+  font-weight: normal;
+}
+
+/* ボタン */
+.button {
+  /* フォントサイズの指定 */
+  font-size: 1.375rem;
+  /* 背景の指定 */
+  background: #0bd;
+  /* 色の指定 */
+  color: #fff;
+  /* 角丸の指定 */
+  border-radius: 5px;
+  /* パッティングの指定 */
+  padding: 18px 32px;
+}
+
+.button:hover {
+  /* 背景の指定 */  
+  background: #0090aa;
+}
+
+/* 大きな画像背景 */
+.big-bg {
+  /* 背景サイズの指定 */
+  background-size: cover;
+  /* 波形位置の指定 */
+  background-position: center top;
+}
+
+#home {
+  /* 背景画像の指定 */
+  background-image: url(../images/main-bg.jpg);
+  /* 最小高さの指定 */
+  min-height: 100vh;
+}
+
+#home .page-title {
+  /* テキスト変換の指定 */
+  text-transform: none;
+}
