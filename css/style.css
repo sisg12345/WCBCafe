@@ -320,3 +320,99 @@ aside p {
   /* 色の指定 */
   color: #0bd;
 }
+
+/* モバイル版
+------------------------------- */
+@media (max-width: 600px) {
+  .page-title {
+    /* フォントサイズの指定 */
+    font-size: 2.5rem;
+  }
+
+  .page-header {
+    /* フレックスボックス縦並び */
+    flex-direction: column;
+    /* 垂直中央寄せの指定 */
+    align-items: center;
+  }
+
+  /* HEADER */
+  .main-nav {
+    /* フォントサイズの指定 */
+    font-size: 1rem;
+    /* マージンの指定 */
+    margin-top: 10px;
+  }
+
+  .main-nav li {
+    /* マージンの指定 */
+    margin: 0 20px;
+  }
+
+  /* HOME */
+  .home-content {
+    /* マージンの指定 */
+    margin-top: 20%;
+  }
+
+  /* NEWS */
+  .news-contents {
+    /* フレックスボックス縦並び */
+    flex-direction: column;
+  }
+
+  article,
+  aside {
+    /* 横幅の指定 */
+    width: 100%;
+  }
+
+  aside {
+    /* マージンの指定 */
+    margin-top: 60px;
+  }
+
+  #news .page-title {
+    /* マージンの指定 */
+    margin-top: 30px;
+  }
+  
+  .post-info {
+    /* マージンの指定 */
+    margin-bottom: 30px;
+  }
+
+  .post-date {
+    /* 横幅の指定 */
+    width: 70px;
+    /* 高さの指定 */
+    height: 70px;
+    /* フォントサイズの指定 */
+    font-size: 1rem;
+  }
+
+  .post-date span {
+    /* フォントサイズの指定 */
+    font-size: 0.875rem;
+    /* パッティングの指定 */
+    padding-top: 2px;
+  }
+
+  .post-title {
+    /* フォントサイズの指定 */
+    font-size: 1.375rem;
+  }
+
+  .post-cat {
+    /* フォントサイズの指定 */
+    font-size: 0.875rem;
+    /* マージンの指定 */
+    margin-top: 10px;
+  }
+
+  .post-title,
+  .post-cat {
+    /* マージンの指定 */
+    margin-left: 80px;
+  }
+}
