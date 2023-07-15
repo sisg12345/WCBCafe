@@ -160,7 +160,7 @@ footer p {
 #home {
   /* 背景画像の指定 */
   background-image: url(../images/main-bg.jpg);
-  /* 最小高さの指定 */
+  /* 縦幅最小の指定 */
   min-height: 100vh;
 }
 
@@ -321,6 +321,48 @@ aside p {
   color: #0bd;
 }
 
+/* MENU
+------------------------------- */
+
+#menu {
+  background-image: url(../images/menu-bg.jpg);
+  /* 縦幅最小の指定 */
+  min-height: 100vh;
+}
+
+.menu-content {
+  /* 横幅最大の指定 */
+  max-width: 560px;
+  /* マージンの指定 */
+  margin-top: 10%;
+}
+
+.menu-content .page-title {
+  /* 画面中央の指定 */
+  text-align: center;
+}
+
+.menu-content p {
+  /* フォントサイズの指定 */
+  font-size: 1.125rem;
+  /* マージンの指定 */
+  margin: 10px 0 0;
+}
+
+.grid {
+  /* グリッドの指定 */
+  display: grid;
+  /* グリッド余白の指定 */
+  gap: 26px;
+  /* グリッドの横幅の指定 */
+  grid-template-columns: repeat(3, minmax(240px, 1fr));
+  /* マージンの指定 */
+  margin-top: 6%;
+  /* マージンの指定 */
+  margin-bottom: 50px;
+}
+
+
 /* モバイル版
 ------------------------------- */
 @media (max-width: 600px) {
@@ -414,5 +456,11 @@ aside p {
   .post-cat {
     /* マージンの指定 */
     margin-left: 80px;
+  }
+
+  /* MENU */
+  .menu-content {
+    /* マージンの指定 */
+    margin-top: 20%;
   }
 }
