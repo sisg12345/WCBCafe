@@ -1,5 +1,5 @@
-@charset "UTF-8";
 /* コードの文字化けを防ぐ */
+@charset "UTF-8";
 
 /* 共通部分
 -------------------------------------------------- */
@@ -34,7 +34,7 @@ img {
 .logo {
   /* 横幅の指定 */
   width: 210px;
-  /* マージンの指定 */
+  /* マージンの上部分の指定 */
   margin-top: 14px;
 }
 
@@ -45,14 +45,14 @@ img {
   font-size: 1.25rem;
   /* テキスト文字大文字変換の指定 */
   text-transform: uppercase;
-  /* マージンの指定 */
+  /* マージンの上部分の指定 */
   margin-top: 34px;
   /* リストマーカーの指定 */
   list-style: none;
 }
 
 .main-nav li {
-  /* マージンの指定 */
+  /* マージンの左部分の指定 */
   margin-left: 36px;;
 }
 
@@ -74,11 +74,11 @@ img {
 }
 
 .wrapper {
-  /* 横幅最大の指定 */
+  /* 横幅の最大の指定 */
   max-width: 1100px;
   /* 中央に配置する設定 */
   margin: 0 auto;
-  /* スマートフォーン向けの余白の指定 */
+  /* パッティングの指定 */
   padding: 0 4%;
 }
 
@@ -107,14 +107,14 @@ footer p {
 .home-content {
   /* 画面中央の指定 */
   text-align: center;
-  /* 余白の指定 */
+  /* マージンの上部分のの指定 */
   margin-top: 10%;
 }
 
 .home-content p {
   /* フォントサイズの指定 */
   font-size: 1.125rem;
-  /* 余白の指定 */
+  /* マージンの指定 */
   margin: 10px 0 42px;
 }
 
@@ -138,7 +138,7 @@ footer p {
   background: #0bd;
   /* 色の指定 */
   color: #fff;
-  /* 角丸の指定 */
+  /* 枠の角丸の指定 */
   border-radius: 5px;
   /* パッティングの指定 */
   padding: 18px 32px;
@@ -177,7 +177,7 @@ footer p {
   background-image: url(../images/news-bg.jpg);
   /* 高さの指定 */
   height: 270px;
-  /* マージンの指定 */
+  /* マージンの下部分指定 */
   margin-bottom: 40px;
 }
 
@@ -191,7 +191,7 @@ footer p {
   display: flex;
   /* 両端の設置の指定 */
   justify-content: space-between;
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 50px;
 }
 
@@ -202,28 +202,28 @@ article {
 }
 
 article img {
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 20px;
 }
 
 article p {
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 1rem;
 }
 
 .post-info {
   /* 相対位置の指定 */
   position: relative;
-  /* パッティングの指定 */
+  /* パッティングの上部分の指定 */
   padding-top: 4px;
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 40px;
 }
 
 .post-date {
   /* 背景色の指定 */
   background-color: #0bd;
-  /* 角丸の指定 */
+  /* 枠の角丸の指定 */
   border-radius: 50%;
   /* 色の指定 */
   color: #fff;
@@ -239,16 +239,16 @@ article p {
   position: absolute;
   /* 位置の指定 */
   top: 0;
-  /* パッティングの指定 */
+  /* パッティングの上部分の指定 */
   padding-top: 10px;
 }
 
 .post-date span {
   /* フォントサイズの指定 */
  font-size: 1rem;
- /* 枠の指定 */
+ /* 枠の上部分の指定 */
  border-top: 1px rgba(255, 255, 255, .5) solid;
- /* パッティングの指定 */
+ /* パッティングの上部分の指定 */
  padding-top: 6px;
  /* ブロック要素の指定 */
  display: block;
@@ -289,21 +289,21 @@ aside p {
  font-size: 1.375rem;
  /* パッティングの指定 */
  padding: 0 8px 8px;
- /* 枠の指定 */
+ /* 枠の下部分の指定 */
  border-bottom: 2px #0bd solid;
  /* フォント太さの指定 */
  font-weight: normal;
 }
 
 .sub-menu {
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 60px;
   /* リストマーカーの指定 */
   list-style: none;
 }
 
 .sub-menu li {
-  /* 枠の指定 */
+  /* 枠の下部分の指定 */
   border-bottom: 1px #ddd solid;
 }
 
@@ -331,9 +331,9 @@ aside p {
 }
 
 .menu-content {
-  /* 横幅最大の指定 */
+  /* 横幅の最大の指定 */
   max-width: 560px;
-  /* マージンの指定 */
+  /* マージンの上部分の指定 */
   margin-top: 10%;
 }
 
@@ -356,9 +356,9 @@ aside p {
   gap: 26px;
   /* グリッドの横幅の指定 */
   grid-template-columns: repeat(3, minmax(240px, 1fr));
-  /* マージンの指定 */
+  /* マージンの上部分の指定 */
   margin-top: 6%;
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 50px;
 }
 
@@ -367,20 +367,20 @@ aside p {
 #contact {
   /* 背景画像の指定 */
   background-image: url(../images/contact-bg.jpg);
-  /* 縦幅の最小指定 */
+  /* 縦幅の最小の指定 */
   min-height: 100vh;
 }
 
 /* フォーム */
 form div {
-  /* マージンの指定 */
+  /* マージンの下部分の指定 */
   margin-bottom: 14px;;
 }
 
 label {
   /* フォントサイズの指定 */
   font-size: 1.125rem;
-  /* マージンの指定 */
+  /* マージンの上部分の指定 */
   margin-top: 10px;
   /* ブロック要素の指定 */
   display: block;
@@ -393,7 +393,7 @@ textarea {
   background: rgba(255, 255, 255, .5);
   /* 枠の指定 */
   border: 1px #fff solid;
-  /* 角丸の指定 */
+  /* 枠の角丸の指定 */
   border-radius: 5px;
   /* パッティングの指定 */
   padding: 10px;
@@ -472,7 +472,7 @@ input[type="submit"] {
 }
 
 #sns .sub-title {
-  /* マージンの指定 */
+  /* マージンの下指定 */
   margin-bottom: 30px;
 }
 
@@ -506,7 +506,7 @@ iframe {
   .main-nav {
     /* フォントサイズの指定 */
     font-size: 1rem;
-    /* マージンの指定 */
+    /* マージンの上部分指定 */
     margin-top: 10px;
   }
 
@@ -517,7 +517,7 @@ iframe {
 
   /* HOME */
   .home-content {
-    /* マージンの指定 */
+    /* マージンの上部分の指定 */
     margin-top: 20%;
   }
 
@@ -534,12 +534,12 @@ iframe {
   }
 
   aside {
-    /* マージンの指定 */
+    /* マージンの上部分の指定 */
     margin-top: 60px;
   }
 
   #news .page-title {
-    /* マージンの指定 */
+    /* マージンの上部分の指定 */
     margin-top: 30px;
   }
   
@@ -560,7 +560,7 @@ iframe {
   .post-date span {
     /* フォントサイズの指定 */
     font-size: 0.875rem;
-    /* パッティングの指定 */
+    /* パッティングの上部分の指定 */
     padding-top: 2px;
   }
 
@@ -572,25 +572,25 @@ iframe {
   .post-cat {
     /* フォントサイズの指定 */
     font-size: 0.875rem;
-    /* マージンの指定 */
+    /* マージンの上部分の指定 */
     margin-top: 10px;
   }
 
   .post-title,
   .post-cat {
-    /* マージンの指定 */
+    /* マージンの左部分の指定 */
     margin-left: 80px;
   }
 
   /* MENU */
   .menu-content {
-    /* マージンの指定 */
+    /* マージンの上部分の指定 */
     margin-top: 20%;
   }
 
   /* CONTACT */
   #contact .page-title {
-    /* マージンの指定 */
+    /* マージンの上部分の指定 */
     margin-top: 40px;
   }
 
@@ -617,7 +617,7 @@ iframe {
   }
 
   .sns-box {
-    /* マージンの指定 */
+    /* マージンの下部分の指定 */
     margin-bottom: 30px;
   }
 }
