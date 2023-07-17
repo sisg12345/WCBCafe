@@ -1,4 +1,4 @@
-@charset "UTF-8"
+@charset "UTF-8";
 /* コードの文字化けを防ぐ */
 
 /* 共通部分
@@ -24,7 +24,7 @@ a {
 }
 
 img {
-  /* 画像の大きさの指定 */
+  /* 横幅の最大の指定 */
   max-width: 100%;
 }
 
@@ -32,7 +32,7 @@ img {
 ------------------------------- */
 
 .logo {
-  /* ロゴの横幅の指定 */
+  /* 横幅の指定 */
   width: 210px;
   /* マージンの指定 */
   margin-top: 14px;
@@ -362,6 +362,130 @@ aside p {
   margin-bottom: 50px;
 }
 
+/* CONTACT
+------------------------------- */
+#contact {
+  /* 背景画像の指定 */
+  background-image: url(../images/contact-bg.jpg);
+  /* 縦幅の最小指定 */
+  min-height: 100vh;
+}
+
+/* フォーム */
+form div {
+  /* マージンの指定 */
+  margin-bottom: 14px;;
+}
+
+label {
+  /* フォントサイズの指定 */
+  font-size: 1.125rem;
+  /* マージンの指定 */
+  margin-top: 10px;
+  /* ブロック要素の指定 */
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  /* 背景の指定 */
+  background: rgba(255, 255, 255, .5);
+  /* 枠の指定 */
+  border: 1px #fff solid;
+  /* 角丸の指定 */
+  border-radius: 5px;
+  /* パッティングの指定 */
+  padding: 10px;
+  /* フォントサイズの指定 */
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  /* 横幅の指定 */
+  width: 100%;
+  /* 横幅の最大の指定 */
+  max-width: 240px;
+  /* 縦幅の指定 */
+  height: 5rem;
+}
+
+textarea {
+  /* パッティングの指定 */
+  width: 100%;
+  /* 横幅の最大の指定 */
+  max-width: 480px;
+  /* 縦幅の指定 */
+  height: 6rem;
+}
+
+input[type="submit"] {
+  /* 枠の指定 */
+  border: none;
+  /* カーソルの指定 */
+  cursor: pointer;
+  /* 行の高さの指定 */
+  line-height: 1;
+}
+
+#location {
+  /* パッティングの指定 */
+  padding: 4px 0;
+}
+
+#location .wrapper {
+  /* 背景の指定 */
+  display: flex;
+  /* 並びの設置の指定 */
+  justify-content: space-between;
+}
+
+.location-info {
+  /* 横幅の指定 */
+  width: 22%;
+}
+
+.location-info p {
+  /* パッティングの指定 */
+  padding: 12px 10px;
+}
+
+.location-map {
+  /* 横幅の指定 */
+  width: 74%;
+}
+
+/* SNS */
+#sns {
+  /* 背景の指定 */
+  background: #FAF7F0;
+  /* パッティングの指定 */
+  padding: 4% 0;
+}
+
+#sns .wrapper {
+  /* 横並びの指定 */
+  display: flex;
+  /* 並びの設置の指定 */
+  justify-content: space-between;
+}
+
+#sns .sub-title {
+  /* マージンの指定 */
+  margin-bottom: 30px;
+}
+
+.sns-box {
+  /* 横幅の指定 */
+  width: 30%;
+}
+
+/* iframe */
+iframe {
+  /* 横幅の指定 */
+  width: 100%;
+}
 
 /* モバイル版
 ------------------------------- */
@@ -462,5 +586,38 @@ aside p {
   .menu-content {
     /* マージンの指定 */
     margin-top: 20%;
+  }
+
+  /* CONTACT */
+  #contact .page-title {
+    /* マージンの指定 */
+    margin-top: 40px;
+  }
+
+  /* フォーム */
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    /* 横幅の最大の指定 */
+    max-width: 100%;
+  }
+
+  /* マップ情報 / SNS */
+  #location .wrapper,
+  #sns .wrapper {
+    /* フレックスボックス縦並び */
+    flex-direction: column;
+  }
+
+  .location-info,
+  .location-map,
+  .sns-box {
+    /* 横幅の指定 */
+    width: 100%;
+  }
+
+  .sns-box {
+    /* マージンの指定 */
+    margin-bottom: 30px;
   }
 }
